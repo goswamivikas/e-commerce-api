@@ -3,6 +3,8 @@ const app = express();
 require("dotenv").config();
 require("express-async-errors");
 
+const asyncWrapper = require("./middleware/async-wrapper");
+
 const connectDB = require("./db/connect");
 
 //middlewares
