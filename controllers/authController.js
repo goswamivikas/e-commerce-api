@@ -1,7 +1,11 @@
 const User = require("../models/User");
 const { ReasonPhrases, StatusCodes } = require("http-status-codes");
 const CustomError = require("../errors");
-const { createJWT, attachCookiesToResponse } = require("../utils");
+const {
+  createJWT,
+  attachCookiesToResponse,
+  createTokenUser,
+} = require("../utils");
 
 const register = async (req, res) => {
   const { email, name, password } = req.body;
@@ -46,12 +50,7 @@ const login = async (req, res) => {
     throw new CustomError.UnauthenticatedError("Incorrect password");
   }
 
-  const tokenUser = {
-    name: user.name,
-    userId: user._id,
-    role: user.role,
-    email: user.email,
-  };
+  const tokenUser = createTokenUser(user);
 
   attachCookiesToResponse({ res, user: tokenUser });
 
