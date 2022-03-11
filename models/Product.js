@@ -37,7 +37,8 @@ const ProductSchema = new mongoose.Schema(
       },
     },
     colors: {
-      type: String,
+      type: [String],
+      default: ["#222"],
       required: true,
     },
     featured: {
@@ -58,7 +59,7 @@ const ProductSchema = new mongoose.Schema(
       default: 0,
     },
     user: {
-      type: mongoose.Types(ObjectId),
+      type: mongoose.Types.ObjectId,
       ref: "User",
       required: true,
     },
@@ -66,4 +67,4 @@ const ProductSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exportsng = mongoose.model("Product", ProductSchema);
+module.exports = mongoose.model("Product", ProductSchema);

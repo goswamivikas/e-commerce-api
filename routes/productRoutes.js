@@ -15,10 +15,19 @@ const {
 } = require("../controllers/productController");
 
 router.route("/getAllProducts").get(getAllProducts);
-router.route("/getSingleProduct").get(getSingleProduct);
-router.route("/createProduct").post(createProduct);
-router.route("/updateProduct").post(updateProduct);
-router.route("/deleteProduct").post(deleteProduct);
-router.route("/uploadImage").post(uploadImage);
+
+router
+  .route("/createProduct")
+  .post(authenticatedUser, authorizePermissions("admin"), createProduct);
+
+router
+  .route("/uploadImage")
+  .post(authenticatedUser, authorizePermissions("admin"), uploadImage);
+
+router
+  .route("/:id")
+  .get(getSingleProduct)
+  .patch(authenticatedUser, authorizePermissions("admin"), updateProduct)
+  .delete(authenticatedUser, authorizePermissions("admin"), deleteProduct);
 
 module.exports = router;
