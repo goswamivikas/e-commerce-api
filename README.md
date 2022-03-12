@@ -1,5 +1,9 @@
 # e-commerce-api
 
+an e-commerce api implemented with Node, Express and MongoDB
+
+live-url: https://e-commerce-api-121.herokuapp.com
+
 <!--- If we have only one group/collection, then no need for the "ungrouped" heading -->
 
 ## Endpoints
@@ -50,7 +54,7 @@
 ```bash
 Method: POST
 Type: RAW
-URL: {{URL}}/auth/login
+URL: https://e-commerce-api-121.herokuapp.com/auth/login
 ```
 
 **_Headers:_**
@@ -78,7 +82,7 @@ URL: {{URL}}/auth/login
 ```bash
 Method: GET
 Type: RAW
-URL: {{URL}}/auth/logout
+URL: https://e-commerce-api-121.herokuapp.com/auth/logout
 ```
 
 **_Headers:_**
@@ -106,7 +110,7 @@ URL: {{URL}}/auth/logout
 ```bash
 Method: POST
 Type: RAW
-URL: {{URL}}/auth/register
+URL: https://e-commerce-api-121.herokuapp.com/auth/register
 ```
 
 **_Headers:_**
@@ -136,7 +140,7 @@ URL: {{URL}}/auth/register
 ```bash
 Method: GET
 Type: RAW
-URL: {{URL}}/users/
+URL: https://e-commerce-api-121.herokuapp.com/users/
 ```
 
 **_Headers:_**
@@ -164,7 +168,7 @@ URL: {{URL}}/users/
 ```bash
 Method: GET
 Type:
-URL: {{URL}}/users/showMe
+URL: https://e-commerce-api-121.herokuapp.com/users/showMe
 ```
 
 **_Headers:_**
@@ -181,7 +185,7 @@ URL: {{URL}}/users/showMe
 ```bash
 Method: GET
 Type:
-URL: {{URL}}/users/62222c22ad66ac5634eeab5b
+URL: https://e-commerce-api-121.herokuapp.com/users/62222c22ad66ac5634eeab5b
 ```
 
 **_Headers:_**
@@ -198,7 +202,7 @@ URL: {{URL}}/users/62222c22ad66ac5634eeab5b
 ```bash
 Method: PATCH
 Type: RAW
-URL: {{URL}}/users/updateUser
+URL: https://e-commerce-api-121.herokuapp.com/users/updateUser
 ```
 
 **_Headers:_**
@@ -224,7 +228,7 @@ URL: {{URL}}/users/updateUser
 ```bash
 Method: PATCH
 Type: RAW
-URL: {{URL}}/users/updateUserPassword
+URL: https://e-commerce-api-121.herokuapp.com/users/updateUserPassword
 ```
 
 **_Headers:_**
@@ -252,7 +256,7 @@ URL: {{URL}}/users/updateUserPassword
 ```bash
 Method: GET
 Type:
-URL: {{URL}}/products/622b20dfc15b3e08483d981b
+URL: https://e-commerce-api-121.herokuapp.com/products/622b20dfc15b3e08483d981b
 ```
 
 **_Headers:_**
@@ -269,7 +273,7 @@ URL: {{URL}}/products/622b20dfc15b3e08483d981b
 ```bash
 Method: GET
 Type:
-URL: {{URL}}/products/
+URL: https://e-commerce-api-121.herokuapp.com/products/
 ```
 
 **_Headers:_**
@@ -286,7 +290,7 @@ URL: {{URL}}/products/
 ```bash
 Method: POST
 Type: RAW
-URL: {{URL}}/products/
+URL: https://e-commerce-api-121.herokuapp.com/products/
 ```
 
 **_Headers:_**
@@ -314,7 +318,7 @@ URL: {{URL}}/products/
 ```bash
 Method: PATCH
 Type: RAW
-URL: {{URL}}/products/622b1d2253c8ee003b8eaa6a
+URL: https://e-commerce-api-121.herokuapp.com/products/622b1d2253c8ee003b8eaa6a
 ```
 
 **_Headers:_**
@@ -339,7 +343,7 @@ URL: {{URL}}/products/622b1d2253c8ee003b8eaa6a
 ```bash
 Method: DELETE
 Type:
-URL: {{URL}}/products/622b1d2253c8ee003b8eaa6a
+URL: https://e-commerce-api-121.herokuapp.com/products/622b1d2253c8ee003b8eaa6a
 ```
 
 **_Headers:_**
@@ -356,7 +360,7 @@ URL: {{URL}}/products/622b1d2253c8ee003b8eaa6a
 ```bash
 Method: POST
 Type: FORMDATA
-URL: {{URL}}/products/uploadImage
+URL: https://e-commerce-api-121.herokuapp.com/products/uploadImage
 ```
 
 **_Headers:_**
@@ -379,7 +383,7 @@ URL: {{URL}}/products/uploadImage
 ```bash
 Method: GET
 Type:
-URL: {{URL}}/products/622b20dfc15b3e08483d981b/reviews
+URL: https://e-commerce-api-121.herokuapp.com/products/622b20dfc15b3e08483d981b/reviews
 ```
 
 **_Headers:_**
@@ -398,7 +402,7 @@ URL: {{URL}}/products/622b20dfc15b3e08483d981b/reviews
 ```bash
 Method: GET
 Type:
-URL: {{URL}}/reviews/622b5d6b5ea4858766f0fa27
+URL: https://e-commerce-api-121.herokuapp.com/reviews/622b5d6b5ea4858766f0fa27
 ```
 
 **_Headers:_**
@@ -415,7 +419,7 @@ URL: {{URL}}/reviews/622b5d6b5ea4858766f0fa27
 ```bash
 Method: GET
 Type:
-URL: {{URL}}/reviews/622b5d6b5ea4858766f0fa27
+URL: https://e-commerce-api-121.herokuapp.com/reviews/622b5d6b5ea4858766f0fa27
 ```
 
 **_Headers:_**
@@ -432,7 +436,7 @@ URL: {{URL}}/reviews/622b5d6b5ea4858766f0fa27
 ```bash
 Method: POST
 Type: RAW
-URL: {{URL}}/reviews
+URL: https://e-commerce-api-121.herokuapp.com/reviews
 ```
 
 **_Headers:_**
@@ -460,7 +464,7 @@ URL: {{URL}}/reviews
 ```bash
 Method: PATCH
 Type: RAW
-URL: {{URL}}/reviews/622b5c10fd3b51abf2b1c33b
+URL: https://e-commerce-api-121.herokuapp.com/reviews/622b5c10fd3b51abf2b1c33b
 ```
 
 **_Headers:_**
@@ -493,7 +497,7 @@ URL: {{URL}}/reviews/622b5c10fd3b51abf2b1c33b
 ```bash
 Method: DELETE
 Type:
-URL: {{URL}}/reviews/622b1d2253c8ee003b8eaa6a
+URL: https://e-commerce-api-121.herokuapp.com/reviews/622b1d2253c8ee003b8eaa6a
 ```
 
 **_Headers:_**
@@ -512,7 +516,7 @@ URL: {{URL}}/reviews/622b1d2253c8ee003b8eaa6a
 ```bash
 Method: GET
 Type:
-URL: {{URL}}/orders/622ca78743593706fcea1452
+URL: https://e-commerce-api-121.herokuapp.com/orders/622ca78743593706fcea1452
 ```
 
 **_Headers:_**
@@ -529,7 +533,7 @@ URL: {{URL}}/orders/622ca78743593706fcea1452
 ```bash
 Method: GET
 Type:
-URL: {{URL}}/orders/
+URL: https://e-commerce-api-121.herokuapp.com/orders/
 ```
 
 **_Headers:_**
@@ -546,7 +550,7 @@ URL: {{URL}}/orders/
 ```bash
 Method: GET
 Type:
-URL: {{URL}}/orders/showAllMyOrders
+URL: https://e-commerce-api-121.herokuapp.com/orders/showAllMyOrders
 ```
 
 **_Headers:_**
@@ -563,7 +567,7 @@ URL: {{URL}}/orders/showAllMyOrders
 ```bash
 Method: POST
 Type: RAW
-URL: {{URL}}/orders
+URL: https://e-commerce-api-121.herokuapp.com/orders
 ```
 
 **_Headers:_**
@@ -598,7 +602,7 @@ URL: {{URL}}/orders
 ```bash
 Method: PATCH
 Type: RAW
-URL: {{URL}}/orders/622ca78743593706fcea1452
+URL: https://e-commerce-api-121.herokuapp.com/orders/622ca78743593706fcea1452
 ```
 
 **_Headers:_**
@@ -625,7 +629,7 @@ URL: {{URL}}/orders/622ca78743593706fcea1452
 ```bash
 Method: GET
 Type:
-URL: {{URL}}
+URL: https://e-commerce-api-121.herokuapp.com
 ```
 
 **_Headers:_**
@@ -639,4 +643,4 @@ URL: {{URL}}
 
 [Back to top](#e-commerce-api)
 
-> Generated at 2022-03-12 20:59:56 by [docgen](https://github.com/thedevsaddam/docgen)
+> Generated at 2022-03-12 21:14:48 by [docgen](https://github.com/thedevsaddam/docgen)
