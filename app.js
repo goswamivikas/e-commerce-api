@@ -3,9 +3,21 @@ const app = express();
 require("dotenv").config();
 require("express-async-errors");
 
+//security
+const rateLimiter = require("express-rate-limit");
+const helmet = require("helmet");
+const xss = require("xss-clean");
+const mongoSanitize = require("express-mongo-sanitize");
+
+app.set("trust proxy", 1);
+app.use(rateLimiter({ windhowMs: 15 * 60 * 1000, max: 60 }));
+app.use(helmet());
+app.use(xss());
+app.use(mongoSanitize());
+const cors = require("cors");
+
 const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
-const cors = require("cors");
 const fileUpload = require("express-fileupload");
 
 const asyncWrapper = require("./middleware/async-wrapper");
